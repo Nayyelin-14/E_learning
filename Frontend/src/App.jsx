@@ -11,6 +11,8 @@ import Forgotpassword from "./Appcomponents/AuthService/Password/Forgotpassword"
 import ErrorPage from "./Pages/ErrorPage";
 import AuthProvider from "./providers/AuthProvider";
 import Profile from "./Pages/Profile";
+import DetialInfo from "./Appcomponents/UserProfile/Setting/DetialInfo";
+import Account from "./Appcomponents/UserProfile/Setting/Account";
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -48,6 +50,14 @@ const App = () => {
         {
           path: "/user-profile/:userid",
           element: <Profile />,
+        },
+        {
+          path: "/user-profile/info/:userid",
+          element: <DetialInfo />,
+        },
+        {
+          path: "/user-profile/update/:userid",
+          element: <Account />,
         },
         {
           path: "*",

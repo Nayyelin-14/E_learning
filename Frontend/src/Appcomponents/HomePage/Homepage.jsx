@@ -55,7 +55,7 @@ const Homepage = () => {
   };
 
   return (
-    <div>
+    <div className="w-[100%]">
       {/* Hero Section */}
       <div className="w-full h-[850px] sm:h-[818px] md:py-3 bg-pale py-3 ">
         <div className="w-[90%] mx-auto sm:h-[90%] md:h-full flex flex-col lg:flex-row justify-between items-center">
@@ -81,7 +81,7 @@ const Homepage = () => {
       </div>
 
       {/* Image Slider */}
-      <div className="relative w-[460px] sm:w-[80%] lg:w-[70%]  mx-auto overflow-hidden my-10 rounded-3xl">
+      <div className="relative w-full sm:w-[80%] lg:w-[70%] md:h-[400px]  mx-auto overflow-hidden my-10 rounded-3xl">
         <AnimatePresence mode="wait">
           <motion.img
             key={currentIndex}
@@ -91,7 +91,7 @@ const Homepage = () => {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -300, opacity: 0 }}
             transition={{ duration: 0.8 }}
-            className="w-[100%] sm:w-full md:w-full h-[400px] object-cover rounded-3xl mx-auto"
+            className="w-[90%] sm:w-full md:w-full h-[260px] md:h-[90%] object-cover rounded-3xl mx-auto"
           />
         </AnimatePresence>
 
@@ -129,7 +129,7 @@ const Homepage = () => {
 
       {/* popular courses */}
 
-      <div className="w-[460px] sm:w-[70%] my-10 mx-auto  ">
+      <div className="w-full sm:w-[80%] lg:w-[70%] mx-auto">
         <PopularCourses />
       </div>
 

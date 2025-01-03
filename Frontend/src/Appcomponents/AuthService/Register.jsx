@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/button";
 import { registerUser } from "../../EndPoints/auth";
 import { toast } from "sonner";
 import { useNavigate } from "react-router-dom";
-
+import { cn } from "@/lib/utils";
 const Register = () => {
   const navigate = useNavigate();
   const form = useForm({
