@@ -57,8 +57,8 @@ const Homepage = () => {
   return (
     <div className="w-[100%]">
       {/* Hero Section */}
-      <div className="w-full h-[850px] sm:h-[818px] md:py-3 bg-pale py-3 ">
-        <div className="w-[90%] mx-auto sm:h-[90%] md:h-full flex flex-col lg:flex-row justify-between items-center">
+      <div className="w-full h-[800px] sm:h-[818px] lg:h-[600px] bg-pale  ">
+        <div className="w-[90%] mx-auto sm:h-[90%] md:h-full flex flex-col lg:flex-row justify-between items-center lg:gap-4">
           <div className="w-full lg:w-1/2 flex justify-center items-center animate__animated animate__fadeInLeft">
             <div className="relative flex size-full max-w-lg items-center justify-center  mb-10 sm:mb-0  ">
               <IconCloud iconSlugs={slugs} />
